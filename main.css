@@ -1,0 +1,199 @@
+/* WebKit Browsers
+
+::-webkit-scrollbar {
+    width: 6px;
+    background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 4px;
+    background-color: #ddd;
+}
+
+top and bottom buttons ::-webkit-scrollbar-button {
+    background-color: #7c2929;
+}*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+	margin-left: 10px;
+	margin-top: 6px;
+}
+
+h2{
+	margin-left: 10px;
+	margin-top: 6px;
+}
+
+hr {
+	color: #1c1c1c;
+	background-color: #1c1c1c;
+	height: 1px;
+	border: 0 none;	
+}
+
+html, body {
+  height: 100%;
+  font: 10px/1.5 Helvetica, Arial, sans-serif;
+  overflow: hidden;
+	color: #1c1c1c;
+}
+
+html{
+	background-color: #f7f7f7;
+}
+
+p{
+	margin-left: 10px;
+	margin-right: 10px;
+	font-family: monospace;
+	font-size: 12px;
+	line-height: normal;
+}
+
+img {
+  display: block;
+  width: 100%;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 10px;
+	padding-right: 6px;
+}
+
+/*.head1 {
+	margin-left: 20px;
+}*/
+
+.container {
+  width: 33.3%;
+  height: 100%;
+  float: left;
+  padding: 10px;
+	min-width: 300px
+}
+
+@media screen and (max-width:720px) {
+  .container {
+    width: 100%;
+  }
+  .container:not(.container:first-child), .container:not(.container:first-child):hover {
+    display: none;
+  }
+}
+
+/* jscrollpane CSS */
+
+.jspContainer
+{
+	overflow: hidden;
+	position: relative;
+}
+
+.jspPane
+{
+	position: absolute;
+}
+
+.jspVerticalBar
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 4px;
+	height: 100%;
+	background: red;
+}
+
+.jspHorizontalBar
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 16px;
+	background: red;
+}
+
+.jspCap
+{
+	display: none;
+}
+
+.jspHorizontalBar .jspCap
+{
+	float: left;
+}
+
+.jspTrack
+{
+	background: #fff;
+	position: relative;
+}
+
+.jspDrag
+{
+	background: #1c1c1c;
+	position: relative;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+}
+
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag
+{
+	float: left;
+	height: 100%;
+}
+
+.jspArrow
+{
+	background: #50506d;
+	text-indent: -20000px;
+	display: block;
+	cursor: pointer;
+	padding: 0;
+	margin: 0;
+}
+
+.jspArrow.jspDisabled
+{
+	cursor: default;
+	background: #80808d;
+}
+
+.jspVerticalBar .jspArrow
+{
+	height: 16px;
+}
+
+.jspHorizontalBar .jspArrow
+{
+	width: 16px;
+	float: left;
+	height: 100%;
+}
+
+.jspVerticalBar .jspArrow:focus
+{
+	outline: none;
+}
+
+.jspCorner
+{
+	background: #eeeef4;
+	float: left;
+	height: 100%;
+}
+
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner
+{
+	margin: 0 -3px 0 0;
+}
