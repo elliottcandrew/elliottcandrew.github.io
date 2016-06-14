@@ -1,0 +1,38 @@
+@import 'normalize'
+@import 'vars'
+@import 'bourbon/bourbon'
+@import 'jscrollpane'
+
+@include keyframes(fadeIn)
+	from
+		@include transform(translateY(100vh))
+	to
+		@include transform(translateY(0))
+		
+@mixin animation--fadeup($delay)
+	@include animation(fadeIn 1.5s $ease-in-out-quint)
+	@include animation-iteration-count(1)
+	@include animation-fill-mode(forwards)
+	@include animation-delay(#{$delay}s)
+
+.content
+	//&:hover
+		color: #1c1c1c
+		@include transition(0.5s $ease-out-expo)
+	@for $i from 1 through 3
+		@include animation--fadeup($i/20)
+	
+.ppage-content
+	@for $i from 1 through 3
+		@include animation--fadeup($i/20)
+		
+.jspTrack
+	@for $i from 1 through 3
+		&:nth-child(#{$i})
+			@include animation--fadeup($i/8)
+		
+.jspDrag
+	&:hover
+		background: tint($grey, 15%)
+	//&:drag
+		background: tint($grey, 0%)
