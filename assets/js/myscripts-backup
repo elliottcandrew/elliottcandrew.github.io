@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	setTimeout(function() {
 	
 		$('.left').each(
 			function()
@@ -27,7 +28,11 @@ $(document).ready(function() {
 					}
 				);
 			}
-		);
+		)
+	
+	}, 5);
+	
+	setTimeout(function() {
 	
 	$('.middle').each(
 		function()
@@ -56,7 +61,11 @@ $(document).ready(function() {
 				}
 			);
 		}
-	);
+	)
+	
+	}, 5);
+	
+	setTimeout(function() {
 	
 	$('.right').each(
 		function()
@@ -85,7 +94,11 @@ $(document).ready(function() {
 				}
 			);
 		}
-	);
+	)
+	
+	}, 5);
+	
+	setTimeout(function() {
 	
 	$('.lef').each(
 		function()
@@ -114,7 +127,11 @@ $(document).ready(function() {
 				}
 			);
 		}
-	);
+	)
+	
+	}, 5);
+	
+	setTimeout(function() {
 	
 	$('.rig').each(
 		function()
@@ -143,7 +160,9 @@ $(document).ready(function() {
 				}
 			);
 		}
-	);
+	)
+	
+	}, 5);
 	
 	/*$('.top').height( $('.top').height() - 15 );
 	/*$('.content').marginRight( $('.content').marginRight() + 2 );*/

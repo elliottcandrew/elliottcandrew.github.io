@@ -572,45 +572,6 @@ textarea {
   animation-delay: 0.15s;
 }
 
-.ppage-content {
-  -webkit-animation: fadeIn 1.5s cubic-bezier(0.86, 0, 0.07, 1);
-  -moz-animation: fadeIn 1.5s cubic-bezier(0.86, 0, 0.07, 1);
-  animation: fadeIn 1.5s cubic-bezier(0.86, 0, 0.07, 1);
-  -webkit-animation-iteration-count: 1;
-  -moz-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-  -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-delay: 0.05s;
-  -moz-animation-delay: 0.05s;
-  animation-delay: 0.05s;
-  -webkit-animation: fadeIn 1.5s cubic-bezier(0.86, 0, 0.07, 1);
-  -moz-animation: fadeIn 1.5s cubic-bezier(0.86, 0, 0.07, 1);
-  animation: fadeIn 1.5s cubic-bezier(0.86, 0, 0.07, 1);
-  -webkit-animation-iteration-count: 1;
-  -moz-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-  -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-delay: 0.1s;
-  -moz-animation-delay: 0.1s;
-  animation-delay: 0.1s;
-  -webkit-animation: fadeIn 1.5s cubic-bezier(0.86, 0, 0.07, 1);
-  -moz-animation: fadeIn 1.5s cubic-bezier(0.86, 0, 0.07, 1);
-  animation: fadeIn 1.5s cubic-bezier(0.86, 0, 0.07, 1);
-  -webkit-animation-iteration-count: 1;
-  -moz-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-  -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-delay: 0.15s;
-  -moz-animation-delay: 0.15s;
-  animation-delay: 0.15s;
-}
-
 .jspTrack:nth-child(1) {
   -webkit-animation: fadeIn 1.5s cubic-bezier(0.86, 0, 0.07, 1);
   -moz-animation: fadeIn 1.5s cubic-bezier(0.86, 0, 0.07, 1);
