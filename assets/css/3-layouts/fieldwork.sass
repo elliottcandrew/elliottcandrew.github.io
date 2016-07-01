@@ -1,12 +1,8 @@
 // IN THE FIELD
 
-.bpage-wrap
-	width: 80vw
-	margin: 0 auto
-
 // CONTENT
 
-.layout-inthefield
+.layout-fieldwork
 
 	hr
 		padding: 0
@@ -19,20 +15,28 @@
 			padding: 0
 
 .fcard
-	margin: 24px 0 18px 0
-	// height: 250px
+	margin: 12px 0 18px 0
+
+	&:first-of-type
+		margin-top: 0
+
+	.fcard-image
+		+size(50% 250px)
+		background-size: cover
+		background-position: center
+
+		float: left
+		margin: 0 18px 12px 0
+		transition: all 1ms
 
 	.fcard-blurb
 		height: 220px
 		overflow: hidden
 
-	h2, img
+	// TYPE
+	
+	h2, .fcard-image
 		transition: all 250ms ease-in-out
-
-	img
-		float: left
-		max-width: 50%
-		margin: 0 18px 12px 0
 
 	h2
 		margin-top: -5px
@@ -45,6 +49,6 @@
 			color: $citrus
 			transition: all 1ms
 
-		img
+		.fcard-image
 			opacity: 0.8
 			transition: all 1ms
