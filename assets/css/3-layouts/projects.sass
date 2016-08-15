@@ -47,12 +47,12 @@
     margin: 0 0 12px 0
 
     font-family: merriweather, serif
-    font-size: 15px
+    font-size: 14px
     font-weight: 300
 
     strong
       font-weight: 700
-      font-size: 22px
+      font-size: 20px
       line-height: 1
 
   h5
@@ -100,5 +100,18 @@
 
   @media (max-width: 768px)
     .text-overlay
-      position: relative
+      position: static
+      display: block
+      top: 0
+      left: 0
+      transform: translateX(0)
       width: 100%
+      padding: 0
+      margin-bottom: 30px
+
+      p
+        margin: 0
+        font-size: 14px
+
+        strong
+          font-size: 18px
