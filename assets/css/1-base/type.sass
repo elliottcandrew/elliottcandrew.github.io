@@ -2,87 +2,102 @@
 
 // headings
 
+// title header
 h1
   margin: 0
-  font-family: Fira Sans, sans-serif
-  font-size: 22px
+  font-family: Catamaran, sans-serif
+  font-size: 1.618em
   font-style: normal
   font-weight: 700
+  @media (min-width: $bp-med)
+    font-size: 2em
 
+// header header
 h2
-  font-family: Fira Sans, sans-serif
-  font-size: 14px
-  font-style: normal
+  margin: 0
+  font-family: Catamaran, sans-serif
+  font-size: 16px
+  line-height: 1.25
+  letter-spacing: .05em
   font-weight: 700
+  @media (min-width: $bp-large)
+    font-size: 1em
+  @media (min-width: $bp-xl)
+    font-size: 1.2em
 
 h3
   margin: 0
-  font-family: Fira Mono, monospace
-  font-size: 12px
-  line-height: 1.1
-  text-decoration: underline
-  text-transform: uppercase
-  font-weight: 400
+  font-family: Catamaran, sans-serif
+  font-size: 16px
+  line-height: 1.25
+  letter-spacing: .05em
+  font-weight: 500
+  @media (min-width: $bp-large)
+    font-size: 2.2ex
+  @media (min-width: $bp-xl)
+    font-size: 2.6ex
 
+// info header
 h4
   margin: 0
   font-family: Fira Mono, monospace
-  font-size: 12px
-  line-height: 1.1
-  text-decoration: underline
-  font-weight: 400
+  font-size: 1em
+  line-height: 1.75
+  letter-spacing: .15em
+  font-weight: 500
+  @media (min-width: $bp-large)
+    font-size: 1.8ex
+  @media (min-width: $bp-xl)
+    font-size: 2ex
 
 // project card
 
 .t1
-  color: $snow
-  font-family: Fira Sans, sans-serif
-  font-size: 14px
+  color: $dark
+  font-family: Catamaran, sans-serif
+  font-size: 30px
   font-style: normal
   font-weight: 700
-  text-transform: uppercase
+
+[class*="word"]
+  font-family: Catamaran, sans-serif
+  font-weight: 700
+  color: $card-col
+  font-size: 1.942em
+  @media(min-width: $bp-med)
+    font-size: 3.142em
 
 .t2
-  color: $snow
-  font-family: Fira Sans, sans-serif
+  color: $dark
+  font-family: Catamaran, sans-serif
   font-size: 14px
   font-style: normal
-  font-weight: 300
+  font-weight: 500
 
 // paragraph styles
 
-.p1
-  // margin-left: 1px
+.p-mono
+  margin: 0
   font-family: Fira Mono, monospace
-  font-size: 12px
-  line-height: 1.1
+  font-size: 1.75ex
+  line-height: 1.8
   font-weight: 400
-
-.p2
-  font-family: Fira Mono, monospace
-  font-size: 12px
-  line-height: 1.4
-  font-weight: 400
+  @media (min-width: $bp-large)
+    font-size: 1.5ex
+  @media (min-width: $bp-xl)
+    font-size: 1.75ex
 
 p
-  font-family: Fira Mono, monospace
-  font-size: 12px
-  line-height: 1.4
-  font-weight: 400
-
-// article styles
-
-h5
-  font-family: Merriweather, serif
-  font-size: 22px
-  line-height: 1.4
-  font-weight: 700
-
-h6
-  font-family: Merriweather, serif
-  font-size: 15px
-  line-height: 1.4
-  font-weight: 300
+  margin: 0
+  font-family: Catamaran, sans-serif
+  font-size: 16px
+  line-height: 1.5
+  letter-spacing: .05em
+  font-weight: 500
+  @media (min-width: $bp-large)
+    font-size: 2.2ex
+  @media (min-width: $bp-xl)
+    font-size: 2.6ex
 
 // modifiers
 
@@ -91,6 +106,3 @@ em
 
 strong
   font-weight: bold
-
-.mono
-  font-family: Fira Mono, monospace
